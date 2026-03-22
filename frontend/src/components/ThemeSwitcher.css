@@ -1,0 +1,65 @@
+.theme-switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: var(--secondary-text);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+  background-color: var(--hover-bg);
+  color: var(--accent-primary);
+}
+
+.theme-btn.active {
+  background-color: var(--accent-primary);
+  color: var(--primary-bg);
+  border-color: var(--accent-primary);
+}
+
+.theme-icon {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .theme-label {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-switcher {
+    gap: 4px;
+    padding: 6px 8px;
+  }
+
+  .theme-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

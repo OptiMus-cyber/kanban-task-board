@@ -1,0 +1,134 @@
+.board-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.board-page.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.empty-state h2 {
+  font-size: 28px;
+  color: var(--primary-text);
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.new-board-form-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-board-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.new-board-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-board-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: var(--primary-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background-color: var(--column-header);
+  color: var(--primary-text);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover-bg);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--accent-primary);
+  color: var(--accent-primary);
+  padding: 8px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: var(--button-transition, all 0.2s ease);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-primary);
+  color: var(--primary-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.error-banner {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #ffe6e6;
+  border: 1px solid #ff4d4d;
+  color: #a70000;
+  border-radius: 4px;
+}

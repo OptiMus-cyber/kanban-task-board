@@ -1,0 +1,102 @@
+.board-view {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  min-height: 500px;
+}
+
+.no-columns {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.new-column-form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.new-column-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.new-column-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-column-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #5568d3;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.add-column-btn {
+  align-self: flex-start;
+  padding: 12px 20px;
+  background-color: white;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  color: #666;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin: 0 20px;
+}
+
+.add-column-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background-color: #f9f9ff;
+}
